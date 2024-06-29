@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  /* background-color: #FF8A08; */
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+  max-width: 1200px;
+}
+
+.header-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 18;
+  transition: box-shadow 0.3s ease;
+}
+
+.header-nav.shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajusta el box-shadow según tus necesidades */
+}
+
+.header-nav img{
+  width: 150px;
+  object-fit: cover;
+}
+
+.header-nav-items nav ul{
+  list-style: none;
+  display: flex;
+}
+
+.header-nav-items nav ul li{
+  margin-left: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: #C40C0C;
+}
+
+.main-section{
+  margin-bottom: 20px;
+  /* background-color: #FF8A08; */
+}
+
+.main-section h3{
+    color: #C40C0C;
+    font-weight: normal;
+    font-size: 30px;
+    
+}
+
+
+
+.main-section-registro{
+    width: 100%;
+    border: 1px solid #C40C0C;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.main-section-registro h4{
+    color: #C40C0C;
+    font-size: 20px;
+}
+
+.main-section-registro div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.main-section-registro p{
+    color: #636363;
+}
+
+.main-section-registro svg{
+    width: 15px;
+    margin-right: 10px;
+}
+
+.separator-line{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #FF6500;
+  }
+
+footer{
+  color: white;
+  background-color: #FF6500;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-info{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.footer-info h4{
+  margin-bottom: 5px;
+}
+.footer-info p{
+  margin-bottom: 10px;
+}
+

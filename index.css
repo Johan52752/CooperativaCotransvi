@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  /* background-color: #FF8A08; */
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  margin: 0 auto;
+  text-align: center;
+  height: 100%;
+  max-width: 1200px;
+}
+
+.header-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 18;
+  transition: box-shadow 0.3s ease;
+}
+
+.header-nav.shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajusta el box-shadow según tus necesidades */
+}
+
+.header-nav img{
+  width: 150px;
+  object-fit: cover;
+}
+
+.header-nav-items nav ul{
+  list-style: none;
+  display: flex;
+}
+
+.header-nav-items nav ul li{
+  margin-left: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: #C40C0C;
+}
+
+.main-section{
+  margin-bottom: 20px;
+  /* background-color: #FF8A08; */
+}
+.main-section-top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 560px;
+  background-image: url('./public/cotransvi-foto.jpg');
+  background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.main-section-top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Color de la capa semitransparente */
+  z-index: 1; /* Asegura que la capa semitransparente esté sobre la imagen de fondo */
+}
+
+.main-section-top h1, .main-section-top h2{
+  position: relative;
+  z-index: 2; /* Asegura que el contenido esté sobre la capa semitransparente */
+  color: white; /* Ajusta el color del texto según el diseño */
+  text-align: center;
+}
+
+.main-section-top h1{
+  font-size: 74px;
+}
+
+.main-section-top h2{
+  font-size: 33px;
+  
+}
+
+.main-section-info{
+  margin-top: 100px;
+}
+
+.main-section-info h2{
+  color: #C40C0C;
+  border-bottom: 1px solid #FF6500;
+  padding-bottom: 17px;
+  font-size: 60px;
+}
+
+.main-section-info-items{
+  display: flex;
+  margin-top: 29px;
+  border-radius: 16px;
+  text-align: left;
+  background-color: #FFE8C5;
+  padding-left: 20px;
+}
+.main-section-info-items div:first-child{
+  margin-right: 20px;
+}
+
+.main-section-info-items h3{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.main-section-info-items div p:last-child{
+  margin-bottom: 30px;
+}
+
+.main-section-info-items img{
+  object-fit: cover;
+  height: 100%;
+  width: 600px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.separator-line{
+  margin-top: 10px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #FF6500;
+}
+
+
+footer{
+  color: white;
+  background-color: #FF6500;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-info{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.footer-info h4{
+  margin-bottom: 5px;
+}
+.footer-info p{
+  margin-bottom: 10px;
+}
+
